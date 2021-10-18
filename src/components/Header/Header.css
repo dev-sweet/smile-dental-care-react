@@ -1,0 +1,54 @@
+.nav-bar{
+  box-shadow: 0 0 8px #01666f3b;
+}
+.nav-brand {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: 1px solid #4dffe75b;
+  padding: 11px 10px;
+  border-radius: 5px;
+  transition: .4s;
+}
+.nav-brand:hover {
+  border-color: #1dbfcc;
+}
+.nav-brand .title-sm{
+  transition: .4s;
+}
+.nav-brand:hover .title-sm{
+  color: #1dbfcc;
+}
+
+.nav-brand .title {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #1dbfcc;
+}
+.navbar-nav a.navbar-link.nav-link{
+  color: #002345;
+  font-size: 18px;
+  margin-left: 20px;
+}
+.navbar-nav a.navbar-link.nav-link:hover{
+  color: #1dbfcc;
+}
+
+/* --------------------------
+-------make header responsive------ */
+@media only screen and (max-width:992px){
+  .navbar-link{
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width:556px) {
+  .nav-brand{
+    font-size: 16px;
+  }
+  .nav-brand .title{
+    font-size: 20px;
+  }
+}
