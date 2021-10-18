@@ -1,0 +1,58 @@
+[
+    {
+        "serviceId": "121231001",
+        "serviceName": "Teeth Cleaning",
+        "serviceFee": "32",
+        "desc": "There are three main types of dental cleanings: prophylaxis cleaning, scaling and root planing, and gross debridement.",
+        "img": "https://i.ibb.co/pPJg5X6/service1.jpg"
+    },
+    {
+        "serviceId": "121231002",
+        "serviceName": "Teeth Whitening",
+        "serviceFee": "39",
+        "desc": "Professional teeth whiteners are safe, effective, and done under the supervision of a dental professional. In most cases, it is worth the extra cost to visit the dentist to get long-lasting, safe results.",
+        "img": "https://i.ibb.co/230h0kj/service2.jpg"
+    },
+    {
+        "serviceId": "121231003",
+        "serviceName": "Orthodontics",
+        "serviceFee": "120",
+        "desc": "There are three main types of dental cleanings: prophylaxis cleaning, scaling and root planing, and gross debridement.",
+        "img": "https://i.ibb.co/wWjZnM4/service3.jpg"
+    },
+    {
+        "serviceId": "121231004",
+        "serviceName": "Cosmetic Dentistry",
+        "serviceFee": "58",
+        "desc": "There are three main types of dental cleanings: prophylaxis cleaning, scaling and root planing, and gross debridement.",
+        "img": "https://i.ibb.co/f4FwHHk/service4.jpg"
+    },
+    {
+        "serviceId": "121231005",
+        "serviceName": "General Dentistry",
+        "serviceFee": "62",
+        "desc": "There are three main types of dental cleanings: prophylaxis cleaning, scaling and root planing, and gross debridement.",
+        "img": "https://i.ibb.co/9vXNbd6/service5.jpg"
+    },
+    {
+        "serviceId": "121231006",
+        "serviceName": "Dental Implants",
+        "serviceFee": "230",
+        "desc": "There are three main types of dental cleanings: prophylaxis cleaning, scaling and root planing, and gross debridement.",
+        "img": "https://i.ibb.co/ccYjFYj/service6.jpg"
+    },
+    {
+        "serviceId": "121231007",
+        "serviceName": "New technology",
+        "serviceFee": "320",
+        "desc": "There are three main types of dental cleanings: prophylaxis cleaning, scaling and root planing, and gross debridement.",
+        "img": "https://i.ibb.co/Qvv9062/service7.jpg"
+    },
+    {
+        "serviceId": "121231008",
+        "serviceName": "Dental Bridge",
+        "serviceFee": "150",
+        "desc": "There are three main types of dental cleanings: prophylaxis cleaning, scaling and root planing, and gross debridement.",
+        "img": "https://i.ibb.co/7RF9Sj5/service8.jpg"
+    }
+]
