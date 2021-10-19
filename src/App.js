@@ -10,8 +10,6 @@ import Signup from './components/Signup/Signup';
 import NotFound from './components/NotFound/NotFound';
 import Dentists from './components/Dentists/Dentists';
 import Appointment from './components/Appointment/Appointment';
-import ServiceDetails from './components/ServiceDetails/ServiceDetails';
-
 function App() {
   return (
     <div className="App">
@@ -21,22 +19,19 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/home">
+          <Route exact path="/home">
             <Home />
           </Route>
-          <Route path="/service/:id">
-            <ServiceDetails />
-          </Route>
-          <Route path="/dentists">
+          <Route exact path="/dentists">
             <Dentists />
           </Route>
-          <Route path="/appointment">
+          <Route exact path="/appointment">
             <Appointment />
           </Route>
-          <Route path="/login">
+          <Route exact path="/login">
             <Login />
           </Route>
-          <Route path="/signup">
+          <Route exact path="/signup">
             <Signup />
           </Route>
           <Route path="*">

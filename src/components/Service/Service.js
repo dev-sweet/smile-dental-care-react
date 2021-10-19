@@ -1,10 +1,14 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
+import { useHistory } from 'react-router';
 import './Service.css';
-import { Link } from 'react-router-dom';
 
 const Service = ({ service }) => {
   const { serviceId, serviceName, desc, img } = service;
+  const history = useHistory();
+  const handleDetails = ()=>{
+    history.push(`/services/${serviceId}`);
+  }
   return (
     <Col md={6} lg={3}>
       <div className="service">
@@ -13,9 +17,9 @@ const Service = ({ service }) => {
           <Card.Body>
             <Card.Title className="service-title">{serviceName}</Card.Title>
             <Card.Text>{desc}</Card.Text>
-            <Link className="service-btn" to={`/service/${serviceId}`}>
+            <button className="service-btn" onClick={handleDetails}>
               View Details
-            </Link>
+            </button>
           </Card.Body>
         </Card>
       </div>
