@@ -61,7 +61,7 @@ const Appointment = () => {
               <Col>
                 <div className="new-feature">
                   <div className="d-flex align-items-center">
-                    <i class="fas fa-user-md"></i>
+                    <i className="fas fa-user-md"></i>
                     <h3>Patient Care</h3>
                   </div>
                   <p>
@@ -73,7 +73,7 @@ const Appointment = () => {
               <Col>
                 <div className="new-feature">
                   <div className="d-flex align-items-center">
-                    <i class="far fa-gem"></i>
+                    <i className="far fa-gem"></i>
                     <h3>Experience</h3>
                   </div>
                   <p>
@@ -85,7 +85,7 @@ const Appointment = () => {
               <Col>
                 <div className="new-feature">
                   <div className="d-flex align-items-center">
-                    <i class="fas fa-tooth"></i>
+                    <i className="fas fa-tooth"></i>
                     <h3>Certified Dentists</h3>
                   </div>
                   <p>
@@ -97,7 +97,7 @@ const Appointment = () => {
               <Col>
                 <div className="new-feature">
                   <div className="d-flex align-items-center">
-                    <i class="fas fa-tooth"></i>
+                    <i className="fas fa-tooth"></i>
                     <h3>Quality Brackets</h3>
                   </div>
                   <p>
