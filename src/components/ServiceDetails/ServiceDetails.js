@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router';
 
 const ServiceDetails = () => {
-    const params = useParams();
-    console.log(params);
-    return (
-        <div>
-            <h1>Service Details</h1>
-        </div>
-    );
+  const {id} = useParams();
+  return (
+    <div>
+      <h1>Service Details</h1>
+      <p>Service id : {id}</p>
+    </div>
+  );
 };
 
 export default ServiceDetails;

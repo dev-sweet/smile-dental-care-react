@@ -1,0 +1,10 @@
+.dentists{
+    padding: 80px 0;
+}
+.title{
+    color: #002345;
+    text-align: center;
+}
+.title span{
+    font-weight: bold;
+}

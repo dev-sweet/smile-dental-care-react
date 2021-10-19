@@ -16,7 +16,7 @@ const Services = () => {
           Enjoy Specialized <span>Care Through Precision,</span> <br /> Artistry, And
           Experience
         </h1>
-        <Row className="g-4">{
+        <Row className="gx-4 gy-5">{
             services.map(service => <Service key={service.serviceId} service={service} />)
             }</Row>
       </Container>

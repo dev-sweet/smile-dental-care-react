@@ -9,7 +9,7 @@ const Service = ({ service }) => {
     <Col md={6} lg={3}>
       <div className="service">
         <Card className="border-0 pb-4">
-          <Card.Img variant="top" src={img} />
+          <Card.Img className="service-img" variant="top" src={img} />
           <Card.Body>
             <Card.Title className="service-title">{serviceName}</Card.Title>
             <Card.Text>{desc}</Card.Text>

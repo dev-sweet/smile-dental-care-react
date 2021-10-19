@@ -10,10 +10,11 @@
     transition: .4s;
     position: relative;
     line-height: 35px;
+    transition:.4s;
 }
 .feature:hover{
     background: #5EA89C;
-    transform: translateY(-20px);
+    transform: translateY(-10px);
 }
 .feature p{
     margin-top:15px;

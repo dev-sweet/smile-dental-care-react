@@ -1,21 +1,28 @@
-.service-title{
-    color: #002345;
+.service-title {
+  color: #002345;
 }
-.service p{
-    color: rgb(78, 78, 78);
-    margin-bottom: 30px;
+.service {
+  overflow: hidden;
+  transition: 0.4s;
+}
+.service:hover {
+  transform: translateY(-10px);
+}
+.service p {
+  color: rgb(78, 78, 78);
+  margin-bottom: 30px;
 }
 .service-btn {
-    text-decoration: none;
-    color: #f7f7f7;
-    font-size: 16px;
-    font-weight: 400;
-    padding: 10px 20px;
-    background: #1dbfcc;
-    border-radius: 5px;
-    transition: .4s;
+  text-decoration: none;
+  color: #f7f7f7;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 20px;
+  background: #1dbfcc;
+  border-radius: 5px;
+  transition: 0.4s;
 }
-.service-btn:hover{
-    color: #fff;
-    background-color: #118d97;
+.service-btn:hover {
+  color: #fff;
+  background-color: #118d97;
 }
