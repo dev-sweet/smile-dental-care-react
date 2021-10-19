@@ -1,10 +1,12 @@
+/* banner style */
 .banner{
     background-color: #F1F7F8;
 }
 .banner-info {
-    height: 90vh;
+    height: 95vh;
     display: flex;
     align-items: center;
+    padding-top: 10px;
 }
 h1.banner-title {
     font-size: 60px;
@@ -33,9 +35,9 @@ h1.banner-title {
     color: #fff;
     background-color: #118d97;
 }
+/* banner image */
 .banner-img{
     width: 100%;
-    height: 100%;
 }
 
 /* ------------------------
