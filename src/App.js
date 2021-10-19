@@ -10,6 +10,7 @@ import Signup from './components/Signup/Signup';
 import NotFound from './components/NotFound/NotFound';
 import Dentists from './components/Dentists/Dentists';
 import Appointment from './components/Appointment/Appointment';
+import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
           </Route>
           <Route path="/home">
             <Home />
+          </Route>
+          <Route path="/service/:id">
+            <ServiceDetails />
           </Route>
           <Route path="/dentists">
             <Dentists />

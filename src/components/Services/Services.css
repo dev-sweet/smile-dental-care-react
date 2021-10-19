@@ -1,0 +1,11 @@
+.services{
+    background-color: #F1F7F8;
+    padding: 80px 0;
+}
+.services-title{
+    color: #002345;
+    padding-bottom: 20px;
+}
+.services-title span{
+    font-weight: 700;
+}

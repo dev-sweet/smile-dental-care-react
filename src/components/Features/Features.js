@@ -27,7 +27,7 @@ const Features = () => {
       <Container>
         <Row className="g-5 gy-md-4">
           {features.map((feature) => (
-            <Col md={6} lg={4}>
+            <Col key={feature.id} md={6} lg={4}>
               <div className="feature">
                 <div className="d-flex align-items-center">
                   <div className="feature-icon">{feature.icon}</div>
