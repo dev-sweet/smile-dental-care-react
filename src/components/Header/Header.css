@@ -51,7 +51,7 @@
   color: #fff;
 }
 /* active nav link style */
-.nav-bar .navabr-link.nav-active{
+.nav-link.nav-active{
   color: #0699a3;
 }
 /* --------------------------

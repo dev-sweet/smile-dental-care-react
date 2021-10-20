@@ -35,28 +35,10 @@ input.input-btn {
 
 .or{
     text-align: center;
-    margin-top:40px
+    margin-top:40px;
+    color:rgb(184, 184, 184);
 }
-.or::before {
-    content: '';
-    display: block;
-    width: 150px;
-    border-top: 2px dashed #61afb573;
-    height: 1px;
-    position: relative;
-    top: 15px;
-    right: 0px;
-}
-.or::after {
-    content: '';
-    display: block;
-    width: 150px;
-    border-top: 2px dashed #61afb573;
-    height: 1px;
-    position: relative;
-    top: -12px;
-    left: 225px;
-}
+
 .google-login{
     margin:auto;
     display: block;

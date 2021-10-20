@@ -49,7 +49,7 @@ const Signup = () => {
         <p className="m-auto text-center">
           <Link to="/login">Already have an account ?</Link>
         </p>
-        <h5 className="or">Or</h5>
+        <h5 className="or">----------- Or ----------</h5>
         <button className="google-login" onClick={handleGoogleSigning}>
           <i className="fab fa-google"></i> Signup with Google
         </button>

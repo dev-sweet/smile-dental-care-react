@@ -45,7 +45,7 @@ const Login = () => {
         <p className="m-auto text-center">
           <Link to="/signup">Don't have an account ?</Link>
         </p>
-        <h5 className="or">Or</h5>
+        <h5 className="or">-----------  Or  -----------</h5>
         <button onClick={handleGooglSigning} className="google-login">
           <i className="fab fa-google"></i> Login with Google
         </button>

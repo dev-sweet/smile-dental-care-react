@@ -16,25 +16,42 @@ const Header = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
-              <Nav.Link className="navbar-link" as={Link} to="/home">
+            <Nav className="ms-auto" defaultActiveKey="/home">
+              <Nav.Link className="navbar-link nav-link" as={Link} to="/home">
                 Home
               </Nav.Link>
-              <Nav.Link className="navbar-link" as={Link} to="/dentists">
+              <Nav.Link
+                className="navbar-link nav-link"
+                as={Link}
+                to="/dentists"
+              >
                 Dentists
               </Nav.Link>
-              <Nav.Link className="navbar-link" as={Link} to="/appointment">
+              <Nav.Link
+                className="navbar-link nav-link"
+                as={Link}
+                to="/appointment"
+              >
                 Appointment
               </Nav.Link>
               {user.displayName && (
                 <Nav.Link className="navbar-link" as={Link} to="/">
-                 {user.displayName}
+                  {user.displayName}
                 </Nav.Link>
               )}
               {user.email ? (
-                <button className="btn btn-logout px-3 d-sm-inline" onClick={logOut}>Logout</button>
+                <button
+                  className="btn btn-logout px-3 d-sm-inline"
+                  onClick={logOut}
+                >
+                  Logout
+                </button>
               ) : (
-                <Nav.Link className="btn btn-logout px-3 text-light" as={Link} to="/login">
+                <Nav.Link
+                  className="btn btn-logout px-3 text-light"
+                  as={Link}
+                  to="/login"
+                >
                   Login
                 </Nav.Link>
               )}
