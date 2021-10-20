@@ -55,6 +55,7 @@ const useFirebase = () => {
       } else {
         setUser({});
       }
+      setIsLoading(false)
     });
   }, [auth]);
   return {

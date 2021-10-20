@@ -19,7 +19,8 @@ const Appointment = () => {
             <div className="appointment-form">
               <h3>Make An Appointment</h3>
               <form onSubmit={handleSubmit(onSubmit)}>
-                <input defaultValue={user.displayName}
+                <input
+                  defaultValue={user.displayName}
                   className="appointment-input"
                   {...register('name', { required: true })}
                   placeholder="Name"
@@ -28,7 +29,7 @@ const Appointment = () => {
                   <span className="errors">Name is required</span>
                 )}
                 <input
-                defaultValue={user.email}
+                  defaultValue={user.email}
                   className="appointment-input"
                   {...register('email', { required: true })}
                   placeholder="Email"
@@ -58,7 +59,8 @@ const Appointment = () => {
           </Col>
           <Col md={8}>
             <h2 className="text-center text-secondary mb-md-3 mb-5">
-              Features That You Will Love Us and <br /> Enjoy Specialized Care
+              Features That You Will Love Us and <br className="title-break" />{' '}
+              Enjoy Specialized Care
             </h2>
             <Row md={2} className="gx-4 gy-3">
               <Col>

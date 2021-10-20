@@ -46,6 +46,10 @@
   background-color: #1dbfcc;
   color: #fff;
 }
+/* active nav link style */
+.nav-bar .navabr-link.nav-active{
+  color: #0699a3;
+}
 /* --------------------------
 -------make header responsive------ */
 /* for medium devices */

@@ -1,5 +1,5 @@
 .login-form {
-  width: 480px;
+  width: 450px;
   background-color: #fff;
   padding: 30px 50px;
   border-radius: 10px;
@@ -62,4 +62,11 @@ input.input-btn {
     display: block;
     border:none;
     padding: 10px 20px;
+}
+
+/* responsive for small devices */
+@media only screen and (max-width:500px){
+  .login-form{
+    width: 90%;
+  }
 }

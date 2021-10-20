@@ -8,3 +8,10 @@
 .title span{
     font-weight: bold;
 }
+
+
+@media only screen and (max-width:430px ){
+    .title-break{
+        display:none;
+    }
+}
