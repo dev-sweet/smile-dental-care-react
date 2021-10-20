@@ -1,16 +1,25 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { Link } from 'react-router-dom';
+import { Link,useHistory,useLocation } from 'react-router-dom';
 import './Login.css';
-import useAuth from '../../hooks/useAuth'
+import useAuth from '../../hooks/useAuth';
+
 const Login = () => {
+  const history = useHistory();
+  const location = useLocation();
+  const redirect_url = location.state?.from || '/home';
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const {signInWithGoogle,signInWithEmail} = useAuth();
-  const onSubmit = (data) => signInWithEmail(data.email,data.password);
+  const { signInWithGoogle, signInWithEmail } = useAuth();
+  const onSubmit = (data) => signInWithEmail(data.email, data.password);
+  const handleGooglSigning = () => {
+    signInWithGoogle().then(() => {
+      history.push(redirect_url);
+    });
+  };
   return (
     <div className="d-flex align-items-center justify-content-center py-5">
       <div className="login-form">
@@ -25,7 +34,8 @@ const Login = () => {
           <input
             className="login-input"
             {...register('password', { required: true })}
-            placeholder="Password" type="password"
+            placeholder="Password"
+            type="password"
           />
           {errors.password && (
             <span className="errors">Password is required</span>
@@ -36,7 +46,7 @@ const Login = () => {
           <Link to="/signup">Don't have an account ?</Link>
         </p>
         <h5 className="or">Or</h5>
-        <button onClick={signInWithGoogle} className="google-login">
+        <button onClick={handleGooglSigning} className="google-login">
           <i className="fab fa-google"></i> Login with Google
         </button>
       </div>

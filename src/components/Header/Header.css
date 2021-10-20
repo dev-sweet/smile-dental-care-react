@@ -1,5 +1,5 @@
 /* navbar style */
-.nav-bar{
+.nav-bar {
   box-shadow: 0 0 8px #01666f3b;
 }
 .nav-brand {
@@ -10,15 +10,15 @@
   border: 1px solid #4dffe75b;
   padding: 11px 10px;
   border-radius: 5px;
-  transition: .4s;
+  transition: 0.4s;
 }
 .nav-brand:hover {
   border-color: #1dbfcc;
 }
-.nav-brand .title-sm{
-  transition: .4s;
+.nav-brand .title-sm {
+  transition: 0.4s;
 }
-.nav-brand:hover .title-sm{
+.nav-brand:hover .title-sm {
   color: #1dbfcc;
 }
 
@@ -28,31 +28,40 @@
   letter-spacing: 2px;
   color: #1dbfcc;
 }
-.navbar-nav a.navbar-link.nav-link{
+.navbar-nav a.navbar-link.nav-link {
   color: #002345;
   font-size: 18px;
   margin-left: 20px;
 }
-.navbar-nav a.navbar-link.nav-link:hover{
+.navbar-nav a.navbar-link.nav-link:hover {
   color: #1dbfcc;
 }
-
+.btn-logout {
+  background-color: #0699a3;
+  color: #fff;
+  margin-left: 4px;
+  transition: .2s;
+}
+.btn-logout:hover{
+  background-color: #1dbfcc;
+  color: #fff;
+}
 /* --------------------------
 -------make header responsive------ */
 /* for medium devices */
-@media only screen and (max-width:992px){
-  .navbar-link{
+@media only screen and (max-width: 992px) {
+  .navbar-link {
     margin-top: 5px;
     margin-left: 20px;
   }
 }
 
 /* for small devices */
-@media only screen and (max-width:556px) {
-  .nav-brand{
+@media only screen and (max-width: 556px) {
+  .nav-brand {
     font-size: 16px;
   }
-  .nav-brand .title{
+  .nav-brand .title {
     font-size: 20px;
   }
 }

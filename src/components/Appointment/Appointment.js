@@ -1,8 +1,10 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
+import useAuth from '../../hooks/useAuth';
 import './Appointment.css';
 const Appointment = () => {
+  const { user } = useAuth();
   const {
     register,
     handleSubmit,
@@ -17,7 +19,7 @@ const Appointment = () => {
             <div className="appointment-form">
               <h3>Make An Appointment</h3>
               <form onSubmit={handleSubmit(onSubmit)}>
-                <input
+                <input defaultValue={user.displayName}
                   className="appointment-input"
                   {...register('name', { required: true })}
                   placeholder="Name"
@@ -26,6 +28,7 @@ const Appointment = () => {
                   <span className="errors">Name is required</span>
                 )}
                 <input
+                defaultValue={user.email}
                   className="appointment-input"
                   {...register('email', { required: true })}
                   placeholder="Email"
