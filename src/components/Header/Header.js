@@ -7,8 +7,8 @@ import './Header.css';
 const Header = () => {
   const { user, logOut } = useFirebase();
   return (
-    <div>
-      <Navbar className="nav-bar" expand="lg">
+    <div className="nav-container">
+      <Navbar fixed="top" className="nav-bar" expand="lg">
         <Container fluid>
           <Navbar.Brand className="nav-brand" as={Link} to="/">
             <span className="title">Smile</span>
@@ -32,9 +32,9 @@ const Header = () => {
                 </Nav.Link>
               )}
               {user.email ? (
-                <button className="btn btn-logout d-sm-inline" onClick={logOut}>Logout</button>
+                <button className="btn btn-logout px-3 d-sm-inline" onClick={logOut}>Logout</button>
               ) : (
-                <Nav.Link className="btn btn-logout text-light" as={Link} to="/login">
+                <Nav.Link className="btn btn-logout px-3 text-light" as={Link} to="/login">
                   Login
                 </Nav.Link>
               )}

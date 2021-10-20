@@ -1,5 +1,9 @@
 /* navbar style */
+.nav-container{
+  margin-bottom: 88px;
+}
 .nav-bar {
+  background: #fff;
   box-shadow: 0 0 8px #01666f3b;
 }
 .nav-brand {
@@ -62,6 +66,9 @@
 
 /* for small devices */
 @media only screen and (max-width: 556px) {
+  .nav-container{
+    margin-bottom: 70px;
+  }
   .nav-brand {
     font-size: 16px;
   }
